@@ -1,0 +1,53 @@
+{
+    "problems": 
+    [
+        {
+            "id": 1,
+            "title": "Find the largest number in a list",
+            "topic": "arrays",
+            "difficulty": "easy",
+            "expected_output": "Given [3, 7, 1, 9, 4] → output should be 9",
+            "hints": [
+                "Assume the first element numbers[0] is the largest",
+                "Loop through the list with a for loop",
+                "If the current number is greater than largest, update largest",
+                "Return largest after the loop ends — not inside it"
+            ],
+            "explanation": "This is called a linear scan — O(n) time. You touch each element once and track the biggest. No built-in max() or sort() needed. The pattern: assume first, compare, update — appears in sorting algorithms everywhere." 
+       
+        },
+
+        { 
+            "id": 2,
+            "title":"Count vowels in a string",
+            "difficulty":"easy",
+            "description": "Given a string, count how many vowels (a,e,i,o,u) it contains. Case insensitive - 'A' and 'a' both count",
+            "expected_output":"Given 'hello world'→ output should be 3",
+            "hints": [
+                             "Create a variable containing all vowels: 'aeiou'",
+                             "Create a counter variable starting at 0",
+                             "Loop through each letter in the string",
+                             "Check if the letter is in your vowels variable",
+                             "If yes, increment the counter",
+                             "Return the counter after the loop"],
+            "explanation": "This teaches string iteration and the 'in' keyword. In Python you can check membership with 'if x in collection' - works on strings, lists, and more." 
+        },
+        {
+            "id": 3,
+            "title" : "Reverse a list",
+            "topic" : "arrays",
+            "difficulty": "easy",
+            "description": "Given a list of numbers, reverse it in place without using slicing [::-1] or reverse().",
+            "expected_output": "Given [1, 2, 3, 4, 5] → output should be [5, 4, 3, 2, 1]",
+            "hints": 
+            [
+                "Use two pointers — left starting at 0, right starting at len(numbers)-1",
+                "Swap numbers[left] and numbers[right] using a, b = b, a syntax",
+                "Move left up by 1 and right down by 1 after each swap",
+                "Stop when left >= right — they've met in the middle"
+            ],
+             "explanation": "This is the two pointer technique — one of the most common patterns in DSA. Two pointers moving toward each other is used in sorting, searching, and string problems constantly."
+            
+        }
+    ]
+}
