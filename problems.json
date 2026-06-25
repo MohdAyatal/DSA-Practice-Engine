@@ -48,6 +48,21 @@
             ],
              "explanation": "This is the two pointer technique — one of the most common patterns in DSA. Two pointers moving toward each other is used in sorting, searching, and string problems constantly."
             
+        },
+
+        {
+            "id": 4,
+            "title": "Check for Duplicates",
+            "category": "Arrays",
+            "difficulty": "Easy",
+            "description": "Given a list of numbers, return True if any number appears more than once, return False if all numbers are unique.",
+            "examples": [
+                {"input": "[1, 2, 3, 2]", "output": "True"},
+                {"input": "[1, 2, 3, 4]", "output": "False"},
+                {"input": "[5, 5, 5]", "output": "True"}
+            ],
+            "hint": "Think about a data structure that only stores unique values and compare its size to the original list.",
+            "pattern": "Set"
         }
     ]
 }

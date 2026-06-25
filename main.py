@@ -30,3 +30,14 @@ def reverse_list(numbers):
 
 print(reverse_list([1,2,3,4,5,6]))
 
+
+def has_duplicate(numbers):
+    
+    unique = set(numbers)
+    if len(unique) < len(numbers):
+        return True
+    else:
+        return False
+
+numbers = [1,2,3,4,5]
+print(has_duplicate(numbers))
